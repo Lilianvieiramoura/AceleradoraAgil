@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+  font-family: 'Poppins', serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#search-bar {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+#search-btn {
+  background-color: #ccc;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#search-btn:hover {
+  background-color: black
+}
+
+.gallery__photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
